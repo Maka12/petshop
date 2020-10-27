@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-title>Apagar produtos</mat-card-title>
+  <form>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Legacy form field</mat-label>
+        <input [value]="product.name" matInput placeholder="Nome" name="name" disabled>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Legacy form field</mat-label>
+        <input [value]="product.price" matInput placeholder="Preço" name="price" disabled>
+      </mat-form-field>
+    </p>
+  </form>
+  <button mat-raised-button (click)="deleteProduct()"  mat-button color="primary">
+    Apagar Produto
+  </button>
+
+  <button mat-raised-button (click)="exitProduct()" >
+    Cancelar
+  </button>
+</mat-card>

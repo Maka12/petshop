@@ -1,0 +1,25 @@
+
+<mat-card>
+  <mat-card-title>Formulario</mat-card-title>
+  <form>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Legacy form field</mat-label>
+        <input [(ngModel)]="product.name" matInput placeholder="Nome" name="name">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Legacy form field</mat-label>
+        <input [(ngModel)]="product.price" matInput placeholder="Preço" name="price">
+      </mat-form-field>
+    </p>
+  </form>
+  <button mat-raised-button (click)="createProduct()"  mat-button color="primary">
+    Salvar Produto
+  </button>
+
+  <button mat-raised-button (click)="exitProduct()" >
+    Cancelar
+  </button>
+</mat-card>
